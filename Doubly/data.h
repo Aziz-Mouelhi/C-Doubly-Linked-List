@@ -1,7 +1,7 @@
 #ifndef DATA_H_INCLUDED
 #define DATA_H_INCLUDED
 typedef struct {
-  int age ;
+  int x ;
   struct person *next;
 }data;
 
