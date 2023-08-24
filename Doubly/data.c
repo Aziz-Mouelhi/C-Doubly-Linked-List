@@ -19,7 +19,7 @@ void AddEnd(data *head){
             data *ptr = malloc(sizeof(data));
             ptr->next = NULL;
             ptr->prev = NULL;
-            printf("Enter Value Number %d:",i+1);
+            printf("Enter The Value Number %d:",i+1);
             scanf("%d",&value);
             ptr->x = value;
             while(temp->next != NULL){
