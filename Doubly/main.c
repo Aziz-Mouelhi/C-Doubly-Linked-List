@@ -3,7 +3,7 @@
 #include"data.h"
 
 int main()
-{               // DoublyLinkedList//
+{               // Doubly_Linked_List//
     int countr;
     data *head ;
     head = Create_Node(head,4);
