@@ -13,6 +13,6 @@ int main()
     PrintData(head);
 
     countr = Counter(head);
-    printf("Number Of Nodes is %d",countr);
+    printf("Number Of Nodes is :%d \n",countr);
     return 0;
 }
