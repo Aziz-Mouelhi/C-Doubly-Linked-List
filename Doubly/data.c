@@ -63,3 +63,17 @@ data *AddFirst(data *head){
                     }
                 return head;
         }
+int Counter(data *head){
+            int x = 0 ;
+            data *ptr = head;
+            if(ptr == NULL) {
+                printf("Your List Is Empty :\n");
+            }else{
+                while(ptr != NULL){
+                    ptr = ptr->next;
+                    x++;
+                }
+                    return x ;
+            }
+
+        }
