@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1692921748 source:c:\users\el mouelhi\desktop\doublylinked\c-doubly-linked-list\doubly\main.c
+	<stdio.h>
+	<stdlib.h>
+	"data.h"
+
+1692921460 c:\users\el mouelhi\desktop\doublylinked\c-doubly-linked-list\doubly\data.h
+
+1692921618 source:c:\users\el mouelhi\desktop\doublylinked\c-doubly-linked-list\doubly\data.c
+	<stdio.h>
+	<stdlib.h>
+	"data.h"
+
