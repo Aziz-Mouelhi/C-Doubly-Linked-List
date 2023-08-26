@@ -18,5 +18,6 @@ data *AddFirst(data *head);
 /////////////////////////////////////////
 int Counter(data *head);
 /////////////////////////////////////////
+data *AddPosition(data *head,int position , int value);
 
 #endif // DATA_H_INCLUDED

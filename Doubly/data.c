@@ -77,3 +77,38 @@ int Counter(data *head){
             }
 
         }
+data *AddPosition(data *head, int position, int value) {
+        data *clone = head;
+        data  *UserNode = malloc(sizeof(data));
+
+        UserNode->next = NULL;
+        UserNode->prev = NULL;
+        UserNode->x = value;
+
+        if(position == 1){
+            UserNode->next = head ;
+            head->prev = UserNode ;
+            head = UserNode;
+            return head;
+        }else{
+            while(position > 2 && clone->next != NULL){
+                clone = clone->next;
+                position--;
+            }
+            if(clone->next == NULL && position > 2 ){
+               printf("Invalid Poition:\n");
+               return head ;
+            }else if(clone->next == NULL){
+                clone->next = UserNode;
+                UserNode->prev = clone ;
+                return head;
+            }else{
+                data *ptr2 = clone->next;
+                clone->next = UserNode;
+                UserNode->prev = clone;
+                UserNode->next = ptr2;
+                ptr2->prev = UserNode;
+                return head;
+            }
+        }
+}
