@@ -96,7 +96,7 @@ data *AddPosition(data *head, int position, int value) {
                 position--;
             }
             if(clone->next == NULL && position > 2 ){
-               printf("Invalid Poition:\n");
+               printf("Invalid Poition :\n");
                return head ;
             }else if(clone->next == NULL){
                 clone->next = UserNode;
