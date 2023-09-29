@@ -5,7 +5,7 @@
 data *Create_Node(data *head , int x){
         data *ptr = malloc(sizeof(data));
         ptr->x = x;
-        ptr->next = NULL;
+        ptr->next = NULL ;
         ptr->prev = NULL;
     return ptr ;
 }
