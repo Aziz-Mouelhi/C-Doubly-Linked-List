@@ -34,10 +34,10 @@ void PrintData(data *head){
     int i = 1;
     data *ptr = head ;
     if(ptr == NULL){
-        printf("Your List Is Empty :\n");
+        printf("Your List Is Empty  :\n");
     }else{
             while(ptr != NULL) {
-                printf(" Data Number %d is : %d\n",i,ptr->x);
+                printf(" Data Number %d is  : %d\n",i,ptr->x);
                 i++;
                 ptr = ptr->next;
             }
