@@ -8,7 +8,7 @@ typedef struct {
 }data;
 
 
-data *Create_Node(data *head ,int x); // create the first node //
+data *Create_Node(int x); // create the first node //
 /////////////////////////////////////////
 void AddEnd(data *head); // add elements from the beginning//
 ////////////////////////////////////////
@@ -19,5 +19,7 @@ data *AddFirst(data *head);
 int Counter(data *head);
 /////////////////////////////////////////
 data *AddPosition(data *head,int position , int value);
+/////////////////////////////////////////
+void Sorting(data *head);
 
 #endif // DATA_H_INCLUDED

@@ -6,16 +6,16 @@ int main()
 {               // DoublyLinkedList//
     int countr;
     data *head ;
-    head = Create_Node(head,4);
+    head = Create_Node(4);
     AddEnd(head);
-    PrintData(head);
     head = AddFirst(head);
+    printf("Number Of Nodes is :%d \n",Counter(head));
+    head = AddPosition(head , 3 , 1999);
     PrintData(head);
+    printf("Number Of Nodes is :%d \n",Counter(head));
 
-    countr = Counter(head);
-    printf("Number Of Nodes is :%d \n",countr);
-    head = AddPosition(head , 9 , 1999);
-    countr = Counter(head);
-    printf("Number Of Nodes is :%d \n",countr);
+    printf("Sorting :\n");
+    Sorting(head);
+    PrintData(head);
     return 0;
 }

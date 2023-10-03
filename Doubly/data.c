@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include "data.h"
 
-data *Create_Node(data *head , int x){
+data *Create_Node(int x){
         data *ptr = malloc(sizeof(data));
         ptr->x = x;
         ptr->next = NULL ;
@@ -109,6 +109,21 @@ data *AddPosition(data *head, int position, int value) {
                 UserNode->next = ptr2;
                 ptr2->prev = UserNode;
                 return head;
+            }
+        }
+}
+void Sorting(data *head){
+        data *p , *q , *end;
+        int tmp ;
+
+        for(end = NULL ; end != head->next ; end = p){
+            for(p = head ; p->next != end ; p = p->next){
+                q = p->next;
+                if(p->x > q->x){
+                    tmp = p->x;
+                    p->x = q->x;
+                    q->x = tmp;
+                }
             }
         }
 }
