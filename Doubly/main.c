@@ -4,7 +4,6 @@
 
 int main()
 {               // DoublyLinkedList//
-    int countr;
     data *head ;
     head = Create_Node(4);
     AddEnd(head);

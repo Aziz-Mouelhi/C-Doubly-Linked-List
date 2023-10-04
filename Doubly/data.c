@@ -46,7 +46,7 @@ void PrintData(data *head){
 data *AddFirst(data *head){
     int elements,value;
     int i = 0 ;
-        printf("Enter How Many Elements You Want To Add :\n\n");
+        printf("Enter How Many Elements You Want To Add:\n\n");
         scanf("%d",&elements);
         while(i <elements){
             data *ptr = malloc(sizeof(data));

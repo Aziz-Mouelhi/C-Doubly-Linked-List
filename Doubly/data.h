@@ -21,5 +21,5 @@ int Counter(data *head);
 data *AddPosition(data *head,int position , int value);
 /////////////////////////////////////////
 void Sorting(data *head);
-
+/////////////////////////////////////////
 #endif // DATA_H_INCLUDED
